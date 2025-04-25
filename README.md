@@ -59,3 +59,7 @@ APP_KEY is a 32-character base64-encoded string used by Laravel for:
 ## Running the Docker
 
 -   `docker-compose -f docker-compose.local.yaml up --build -d`
+
+## Opening Bash/Shell in Docker
+
+-   `docker-compose -f docker-compose.local.yaml exec app bash`
