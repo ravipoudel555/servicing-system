@@ -55,3 +55,7 @@ APP_KEY is a 32-character base64-encoded string used by Laravel for:
 -   Session security
 
 -   `php artisan key:generate`
+
+## Running the Docker
+
+-   `docker-compose -f docker-compose.local.yaml up --build -d`
