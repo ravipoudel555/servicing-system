@@ -23,3 +23,8 @@
 
 -   `php artisan db:seed`
 -   `php artisan db:seed --class=[SeederName]`
+
+### Missing api.php file?
+
+-   `php artisan install:api`
+
