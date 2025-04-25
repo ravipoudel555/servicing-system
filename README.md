@@ -33,3 +33,12 @@ Ref: https://laravel.com/docs/11.x/releases#opt-in-routing
 Create the [api.php] file:
 
 -   `php artisan install:api`
+
+
+
+## Clear Config, Cache & Refresh Autoload in Laravel
+
+-   `php artisan config:clear`
+-   `php artisan cache:clear`
+-   `composer dump-autoload`
+
