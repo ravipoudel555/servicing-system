@@ -9,4 +9,11 @@ class Mechanic extends Model
 {
     /** @use HasFactory<\Database\Factories\MechanicFactory> */
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'phone',
+        'address',
+        'user_id',
+    ];
 }

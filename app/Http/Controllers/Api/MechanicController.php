@@ -34,7 +34,6 @@ class MechanicController extends Controller
             ...$request->validate(
                 [
                     'name' => 'required|string|max:255',
-                    'email' => 'required|email|unique:mechanics',
                     'phone' => 'required|string|digits:10|unique:mechanics',
                     'address' => 'required',
 
