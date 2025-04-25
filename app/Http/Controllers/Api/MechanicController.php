@@ -21,15 +21,37 @@ class MechanicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // $request->validate(
+        //     [
+        //         'name' => 'required|string|max:255',
+        //         'email' => 'required|email|unique:mechanics',
+        //         'phone' => 'required|string|digits:10|unique:mechanics',
+        //         'address' => 'required',
+
+        //     ]
+        // );
+        $mechanic = Mechanic::create([
+            ...$request->validate(
+                [
+                    'name' => 'required|string|max:255',
+                    'email' => 'required|email|unique:mechanics',
+                    'phone' => 'required|string|digits:10|unique:mechanics',
+                    'address' => 'required',
+
+                ]
+            ),
+            'user_id' => 1
+        ]);
+
+        return $mechanic;
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Mechanic $mechanic)
     {
-        //
+        return $mechanic;
     }
 
     /**

@@ -1,3 +1,8 @@
+# Installing Dependencies
+
+-   `composer install`
+-   `npm install`
+
 # Some Artisan Commands
 
 ## Creating Modules
