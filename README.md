@@ -34,11 +34,19 @@ Create the [api.php] file:
 
 -   `php artisan install:api`
 
-
-
 ## Clear Config, Cache & Refresh Autoload in Laravel
 
 -   `php artisan config:clear`
 -   `php artisan cache:clear`
 -   `composer dump-autoload`
 
+## Generating Key
+
+This command creates a secure random key and puts it in your [.env]
+APP_KEY is a 32-character base64-encoded string used by Laravel for:
+
+-   Encryption (e.g., encrypted cookies, user data)
+-   Hashing
+-   Session security
+
+-   `php artisan key:generate`
