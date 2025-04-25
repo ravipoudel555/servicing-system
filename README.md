@@ -26,5 +26,10 @@
 
 ### Missing api.php file?
 
--   `php artisan install:api`
+The [api.php] route file is no longer present by default
 
+Ref: https://laravel.com/docs/11.x/releases#opt-in-routing
+
+Create the [api.php] file:
+
+-   `php artisan install:api`
