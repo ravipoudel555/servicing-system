@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
+use App\Http\Controllers\Controller;
 use App\Models\Mechanic;
 use Illuminate\Http\Request;
 
@@ -12,15 +13,7 @@ class MechanicController extends Controller
      */
     public function index()
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
+        return Mechanic::all();
     }
 
     /**
@@ -34,15 +27,7 @@ class MechanicController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Mechanic $mechanic)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Mechanic $mechanic)
+    public function show(string $id)
     {
         //
     }
@@ -50,7 +35,7 @@ class MechanicController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Mechanic $mechanic)
+    public function update(Request $request, string $id)
     {
         //
     }
@@ -58,7 +43,7 @@ class MechanicController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Mechanic $mechanic)
+    public function destroy(string $id)
     {
         //
     }

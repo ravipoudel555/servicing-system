@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Mechanic>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Vehicle>
  */
-class MechanicFactory extends Factory
+class VehicleFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -18,8 +18,8 @@ class MechanicFactory extends Factory
     {
         return [
             'name' => fake()->name(),
-            'phone' => fake()->unique()->phoneNumber(),
-            'address' => fake()->address(),
+            'model' => fake()->name(),
+            'number' => fake()->name(),
         ];
     }
 }
