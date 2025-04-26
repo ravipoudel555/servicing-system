@@ -4,7 +4,7 @@
 		#worker /path/to/your/worker.php
 		{$FRANKENPHP_CONFIG}
 	}
-}`
+}
 
 :80 {
     root * /var/www/html/public/
