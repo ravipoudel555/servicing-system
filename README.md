@@ -63,3 +63,37 @@ APP_KEY is a 32-character base64-encoded string used by Laravel for:
 ## Opening Bash/Shell in Docker
 
 -   `docker-compose -f docker-compose.local.yaml exec app bash`
+
+# Git Commands
+
+#### Git is a distributed version control system that allows you to track changes to your codebase.
+
+## Initialize Git
+
+#### Initialize a new Git repository in your project directory. It creates a .git directory in your project.
+
+-   `git init`
+
+## Add Files
+
+#### Add all files to the staging area.
+
+-   `git add .`
+
+## Commit
+
+#### Commit the changes to the repository. Once you are satisfied with the changes, you can make a commit.
+
+#### We follow the conventional commit format.
+
+Ref: https://www.conventionalcommits.org/en/v1.0.0/
+
+-   `git commit -m "Initial commit"`
+
+## Pushing to Remote Source
+
+#### Push the changes to GitHub/GitLab/Bitbucket. This will push the changes to the remote repository.
+
+-   `git remote add origin <repository-url>`
+-   `git branch -M main`
+-   `git push -u origin main`
