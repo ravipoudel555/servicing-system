@@ -84,7 +84,7 @@ APP_KEY is a 32-character base64-encoded string used by Laravel for:
 
 #### Commit the changes to the repository. Once you are satisfied with the changes, you can make a commit.
 
-#### We follow the conventional commit format.
+#### We follow the conventional commit format to write commit messages.
 
 Ref: https://www.conventionalcommits.org/en/v1.0.0/
 
