@@ -76,7 +76,8 @@ APP_KEY is a 32-character base64-encoded string used by Laravel for:
 
 ## Add Files
 
-#### Add all files to the staging area.
+#### Add all files/changes to the staging area.
+#### Only the changes which are staged will be included in the next commit.
 
 -   `git add .`
 
