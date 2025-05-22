@@ -77,6 +77,7 @@ APP_KEY is a 32-character base64-encoded string used by Laravel for:
 ## Add Files
 
 #### Add all files/changes to the staging area.
+
 #### Only the changes which are staged will be included in the next commit.
 
 -   `git add .`
@@ -98,3 +99,24 @@ Ref: https://www.conventionalcommits.org/en/v1.0.0/
 -   `git remote add origin <repository-url>`
 -   `git branch -M main`
 -   `git push -u origin main`
+
+### SSH Setup
+
+#### SSH is a secure way to connect to remote servers.
+
+#### Generate a new SSH key pair.
+
+-   `ssh-keygen -t ed25519 -C "your_email@example.com"`
+
+#### Add the SSH key to your GitHub account.
+
+-   Copy the contents of your public key file (e.g., `~/.ssh/id_ed25519.pub`)
+-   Paste the key into the "Key" field
+-   Give the key a title (e.g., "Personal MacBook")
+-   Click "Add SSH key"
+
+#### Test the SSH connection.
+
+-   `ssh -T git@github.com`
+
+#### If the connection is successful, you should see a message like "Hi username! You've successfully authenticated, but GitHub does not provide shell access."
