@@ -120,3 +120,15 @@ Ref: https://www.conventionalcommits.org/en/v1.0.0/
 -   `ssh -T git@github.com`
 
 #### If the connection is successful, you should see a message like "Hi username! You've successfully authenticated, but GitHub does not provide shell access."
+
+## Postman
+
+### Script for saving access token
+
+const response = pm.response.json()
+
+console.log(response)
+
+console.log(response.token)
+
+pm.collectionVariables.set('accessToken', response.token);

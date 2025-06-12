@@ -17,6 +17,10 @@ Route::get('/ping', fn () => response()->json(['status' => 'ok']));
 
 Route::post('/login', [AuthController::class, 'login']);
 
+
+
+Route::post('/profile', [AuthController::class, 'getProfile'])->middleware('auth:sanctum');
+
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
 
 Route::post('/register', [AuthController::class, 'register']);

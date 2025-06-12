@@ -22,3 +22,7 @@ class DatabaseSeeder extends Seeder
         ]);
     }
 }
+
+/**
+ * php artisan make:factory UserFactory --model=User
+ */

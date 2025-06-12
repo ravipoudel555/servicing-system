@@ -108,4 +108,8 @@ class AuthController extends Controller
         ]);
     }
 
+
+    public function getProfile(){
+     return "hello";
+    }
 }
