@@ -2,8 +2,10 @@
 
 namespace Database\Seeders;
 
+use App\Models\MasterMake;
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Faker\Factory as FakerFactory;
+use Faker\Provider\FakeCar;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -14,11 +16,17 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         User::factory(1000)->create();
+    
+
+      
 
         $this->call([
             CustomerSeeder::class,
-            MechanicSeeder::class,
-            VehicleSeeder::class,
+            // MechanicSeeder::class,
+            // VehicleSeeder::class,
+            MasterMakeSeeder::class,
+            MasterModelSeeder::class
+            
         ]);
     }
 }
