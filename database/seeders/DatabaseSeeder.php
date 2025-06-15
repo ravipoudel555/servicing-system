@@ -15,10 +15,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory(1000)->create();
-    
-
-      
+       
+       
 
         $this->call([
             CustomerSeeder::class,
@@ -28,6 +26,10 @@ class DatabaseSeeder extends Seeder
             MasterModelSeeder::class
             
         ]);
+
+        // Use   r::factory(1000)->create();
+    
+
     }
 }
 

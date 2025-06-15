@@ -13,6 +13,7 @@
 -   `php artisan make:seeder [SeederName]`
 -   `php artisan make:model [ModelName] -m`
 -   `php artisan make:model [ModelName] -mc`
+-   `php artisan make:controller Api/[ControllerName] --api`
 
 ## Database
 

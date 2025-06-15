@@ -9,5 +9,10 @@ class MasterMake extends Model
 {
 
     use HasFactory;
-    //
+    
+
+    public function models()
+    {
+        return $this->hasMany(MasterModel::class);
+    }
 }

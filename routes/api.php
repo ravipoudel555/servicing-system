@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\MasterMakeController;
+use App\Http\Controllers\Api\MasterModelController;
 use App\Http\f\Api\CustomerController;
 use App\Http\Controllers\Api\MechanicController;
 use App\Http\Controllers\Api\VehicleController;
@@ -32,6 +34,17 @@ Route::apiResource('mechanics', MechanicController::class);
 
 //[scoped] meaning -> the vehicle resource is always a part of customer i.e. vehicle is scoped by customer
 Route::apiResource('customers.vehicles', VehicleController::class)->scoped(['vehicle' => 'customer']);
+
+
+
+Route::apiResource('makes', MasterMakeController::class);
+
+
+Route::apiResource('makes.models', MasterModelController::class)
+->scoped()->except(['update']);
+
+//scoped first checks if parent(make) exists , only then loads up the child(model)
+//wihout scoped() , it will try to load up the child(model) even if parent(make) does not exist
 
 
 
