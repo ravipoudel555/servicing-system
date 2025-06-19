@@ -12,3 +12,4 @@ class MasterModel extends Model
         return $this->belongsTo(MasterMake::class);
     }
 }
+

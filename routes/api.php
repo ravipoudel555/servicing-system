@@ -37,11 +37,11 @@ Route::apiResource('customers.vehicles', VehicleController::class)->scoped(['veh
 
 
 
-Route::apiResource('makes', MasterMakeController::class);
+Route::apiResource('makes', MasterMakeController::class)->except(['update','destroy','show', 'store']);
 
 
 Route::apiResource('makes.models', MasterModelController::class)
-->scoped()->except(['update']);
+->scoped()->except(['update','destroy','show', 'store']);
 
 //scoped first checks if parent(make) exists , only then loads up the child(model)
 //wihout scoped() , it will try to load up the child(model) even if parent(make) does not exist
