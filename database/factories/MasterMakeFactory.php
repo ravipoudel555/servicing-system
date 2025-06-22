@@ -20,7 +20,7 @@ class MasterMakeFactory extends Factory
 
 
         /** @var \Faker\Generator|\Faker\Provider\FakeCar $faker */
-
+  
         $faker = FakerFactory::create();
         $faker->addProvider(new FakeCar($faker));
 

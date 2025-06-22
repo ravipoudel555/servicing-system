@@ -22,6 +22,7 @@ class MasterMakeSeeder extends Seeder
 
 
          
+        
          for($i=0; $i<20; $i++){
           MasterMake::firstOrCreate([
                 'name' => $faker->vehicleBrand(),
